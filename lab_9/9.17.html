@@ -1,0 +1,27 @@
+<!-- Sử dụng thuộc tính order để sắp xếp lại các item -->
+<!-- Thuộc tính order được sử dụng để  CSS biết thứ tự xuất hiện của các flex item trong flex container. Theo mặc định, các item sẽ xuất hiện theo cùng thứ tự mà chúng có trong HTML . Thuộc tính order nhận số làm giá trị và có thể sử dụng số âm. -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    order: 2;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    order: 1;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

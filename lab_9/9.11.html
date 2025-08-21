@@ -1,0 +1,30 @@
+<!-- Sử dụng thuộc tính align-self -->
+<!-- Thuộc tính cuối cùng cho các  flex item là align-self. Thuộc tính này cho phép bạn căn chỉnh từng item riêng lẻ, thay vì áp dụng cho tất cả item cùng một lúc. Điều này rất hữu ích vì các kỹ thuật như float,clear.vertical-align không hoạt động trên các flex item.
+
+align-selfchấp nhận các giá trị giống như align-itemsvà sẽ ghi đè bất kỳ giá trị nào do thuộc tính align-items đặt.
+
+Thêm thuộc tính CSS align-selfvào cả #box-1và #box-2. Cho #box-1một giá trị của centervà cho #box-2một giá trị flex-end. -->
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

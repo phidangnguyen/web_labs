@@ -1,0 +1,31 @@
+<!-- Sử dụng thuộc tính flex-shrink để thu nhỏ các item -->
+<!-- 
+Cho đến nay, tất cả các thuộc tính trong các thử thách đều áp dụng cho flex container (phần tử mẹ của các flex item). Tuy nhiên, có một số thuộc tính áp dụng cho các flex item.
+
+Đầu tiên là thuộc tính flex-shrink. Khi nó được sử dụng, nó cho phép item thu nhỏ lại nếu flex container quá nhỏ. Các item thu nhỏ khi chiều rộng của vùng chứa mẹ nhỏ hơn chiều rộng của tất cả các flex item bên trong nó cộng lại.
+
+Thuộc tính flex-shrink nhận các số làm giá trị. Con số này càng cao thì nó sẽ càng bị thu hẹp lại so với các item khác trong container. Ví dụ, nếu một item có giá trị của flex-shrink là 1và item kia có giá trị của flex-shrink là 3, thì item có giá trị 3sẽ co lại gấp ba lần so với item kia. -->
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

@@ -1,0 +1,59 @@
+<!-- Sử dụng thuộc tính flex-wrap để bọc hàng hoặc cột -->
+<!-- CSS flexbox có tính năng chia flex container thành nhiều hàng (hoặc cột). Theo mặc định, một flex container sẽ chứa tất cả các flex item. Ví dụ, một hàng sẽ nằm trên một dòng.
+
+Việc sử dụng thuộc tính flex-wrap cho phép CSS bọc các item. Điều này có nghĩa là các item bổ sung sẽ chuyển sang một hàng hoặc cột mới. Break point tại nơi bọc các item phụ thuộc vào kích thước của các item và kích thước của container.
+
+CSS cũng có các tùy chọn cho hướng của việc bọc item:
+
+nowrap: đây là cài đặt mặc định và không bao gồm các item.
+wrap: bọc các item thành nhiều dòng từ trên xuống dưới nếu chúng ở trong hàng và từ trái sang phải nếu chúng ở trong cột.
+wrap-reverse: bọc các item thành nhiều dòng từ dưới lên trên nếu chúng ở trong hàng và từ phải sang trái nếu chúng ở trong cột. -->
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>
+  <div id="box-5"></div>
+  <div id="box-6"></div>
+</div>

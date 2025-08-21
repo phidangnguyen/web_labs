@@ -1,0 +1,51 @@
+<!-- Sử dụng đơn vị trong Grid thay đổi kích thước hàng và cột -->
+<!-- Bạn có thể sử dụng các đơn vị tuyệt đối và tương đối như px và em trong CSS Grid để xác định kích thước của hàng và cột. Bạn cũng có thể sử dụng những đơn vị này:
+
+fr: đặt cột hoặc hàng thành một phần nhỏ của không gian có sẵn
+
+auto: đặt cột hoặc hàng thành chiều rộng hoặc chiều cao tự động theo nội dung
+
+%: điều chỉnh cột hoặc hàng theo phần trăm chiều rộng của container
+
+Dưới đây là một ví dụ cụ thể
+
+grid-template-columns: auto 50px 10% 2fr 1fr; -->
+
+<style>
+  .d1 {
+    background: LightSkyBlue;
+  }
+  .d2 {
+    background: LightSalmon;
+  }
+  .d3 {
+    background: PaleTurquoise;
+  }
+  .d4 {
+    background: LightPink;
+  }
+  .d5 {
+    background: PaleGreen;
+  }
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Only change code below this line */
+
+    grid-template-columns: 1fr 100px 2fr;
+
+    /* Only change code above this line */
+    grid-template-rows: 50px 50px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>

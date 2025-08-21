@@ -1,0 +1,28 @@
+<!-- Sử dụng thuộc tính flex-grow để mở rộng các item -->
+<!-- Đối lập với flex-shrinklà thuộc tính flex-grow.  flex-shrink  cho phép thu hẹp kích thước của các item khi container thu hẹp. Thuộc tính flex-grow mở rộng kích thước của các item khi container mở rộng.
+
+Sử dụng một ví dụ tương tự thử thách trước, nếu một item có giá trị của flex-grow là 1và item kia có giá trị của flex-grow là 3, thì item có giá trị 3sẽ mở rộng gấp ba lần so với item kia. -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
