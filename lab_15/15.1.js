@@ -1,7 +1,9 @@
+"use strict";
+// https://docs.google.com/document/d/1U6LIEmerjBKZsWzg-8D5VpcKwBfHzEBk/edit
 // Lab 14.1: Giá trị và biến Javascript
 
 // 1. Khai báo các biến và gán giá trị
-let country = 'Việt Nam';
+let country = 'VietNam';
 let continent = 'Châu Á';
 let population = 97.3; // triệu dân
 
@@ -32,22 +34,21 @@ console.log('Kiểu dữ liệu của language:', typeof language);
 console.log('\n=== LAB 15.2: Let, const và var ===');
 
 // 1. Gán giá trị cho language
-language = 'Tiếng Việt';
+language = 'Vietnamese';
 console.log('Ngôn ngữ:', language);
 
 // 2. Chuyển các biến không thay đổi thành const
 // (Tạo lại với const - các biến này không nên thay đổi)
-const countryConst = 'Việt Nam';
+const countryConst = 'VietNam';
 const continentConst = 'Châu Á';
 const isIslandConst = false;
-const languageConst = 'Tiếng Việt';
+const languageConst = 'Vietnamese';
 
-console.log('Các biến const đã được tạo');
 
 // 3. Thử thay đổi giá trị biến const (sẽ gây lỗi)
 console.log('Thử thay đổi biến const...');
 try {
-    // countryConst = 'Thailand'; // Uncommment dòng này sẽ gây lỗi
+    countryConst = 'Thailand';
     console.log('Không thể thay đổi biến const!');
 } catch(error) {
     console.log('Lỗi khi thay đổi const:', error.message);

@@ -1,0 +1,30 @@
+<!-- https://docs.google.com/document/d/19bmxFbceYSUlQH2PAVAKAZ404VWQLN4y/edit -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let text = "";
+        let country = prompt("Country: ", "VietNam")
+        let language = prompt("Language: ", "english")
+        let population =  prompt("Population: ", "100")
+        let isIsland = prompt("Is island: ", "yes")
+
+        if (population < 50 && isIsland == "yes" && language == "english") {
+            text = `You should live in ${country} :)`
+        } else if (country == "Canada") {
+            text = `You should live in ${country} :)`
+        } else {
+            text = `${country} does not meet your criteria :('`
+        }
+
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

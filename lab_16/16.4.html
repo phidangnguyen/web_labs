@@ -1,0 +1,41 @@
+<!-- https://docs.google.com/document/d/19bmxFbceYSUlQH2PAVAKAZ404VWQLN4y/edit -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let text = "";
+        let language = prompt("Language: ", "Chinese");
+
+        switch (language) {
+          case "Chinese":
+          case "Mandarin":
+            text = "MOST number of native speakers!";
+            break;
+          case "Spanish":
+            text = "2nd place in number of native speakers";
+            break;
+          case "English":
+            text = "3rd place";
+            break;
+          case "Hindi":
+            text = "Number 4";
+            break;
+          case "Arabic":
+            text = "5th most spoken language";
+            break;
+          default:
+            text = "Great language too :D";
+            break;
+        }
+
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

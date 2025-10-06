@@ -1,3 +1,5 @@
+"use strict";
+
 console.log('Các phép toán cần kiểm tra:');
 
 // Toán tử số học (-, *, /, %): Luôn chuyển thành number
